@@ -1,0 +1,195 @@
+h2{
+	text-align: center;
+	font-size: 17px;
+	margin: 30px 0 10px 0;
+	font-weight: 200;
+}
+h3{
+	font-size: 16px;
+	margin: 0 0 10px 6px;
+}
+
+/* Form elements (can be <a> or <input> tags) */
+a.btn_type,input.btn_type,a.btn_type_small,input.btn_type_small{
+	font-size:16px;
+	padding:4px 8px;
+	margin:4px;
+	border:2px solid #655138;
+	border-radius:8px;
+	background:url(/images/button_gradient.png) repeat-x;
+	cursor:pointer;
+	color:#d5a270;
+	font-size:14px;
+}
+a.btn_type_small,input.btn_type_small{
+	font-size:11px;
+	border-width:1px;
+	border-radius:3px;
+	padding:2px 4px;
+	margin:0px;
+}
+.btn_type:hover{
+	background:url(/images/button_gradient_hover.png) repeat-x;
+	border-width:2px;
+}
+.btn_type_small:hover{
+	background:url(/images/button_gradient_hover.png) repeat-x;
+	border-width:1px;
+}
+.text_type{
+	font-size:16px;
+	width:210px;
+	color:#d5a270;
+	border:1px solid #492d2b;
+	padding:5px 10px;
+	border-radius:6px;
+	text-align:center;
+	background:url(/images/input_gradient.png) repeat-x;
+	margin:4px;
+}
+.check_type{
+	margin-right:12px;
+}
+
+/* Login page */
+.bottom_login_links{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	color:#583f2d;
+}
+.bottom_login_links > div{margin:20px 35px;}
+.bottom_login_links a{color:#8f673a;}
+.left_links{float:left;}
+.right_links{float:right;}
+#login_form_errors, .form_feedback{
+	font-size:12px;
+	color:#ce3f00;
+}
+
+/* non-login styles */
+.page_padding input.btn_type,.page_padding input.text_type{
+	font-size:13px;
+	text-align:left;
+}
+.page_padding textarea{
+	width:530px;
+	height:100px;
+	color:#d5a270;
+	border:1px solid #492d2b;
+	border-radius:6px;
+	margin:4px;
+	padding:6px;
+	font-family:inherit;
+	font-size:13px;
+	background-image:-moz-linear-gradient(top, rgba(70,36,12,.5), rgba(90,57,22,.5) 32px); /*rgba(90,57,22,.5)*/
+	background-color:transparent;
+}
+
+/* Control Panel Styles */
+.cp_top_links{
+	border-bottom:1px dotted #ad824b;
+	cursor:default;
+}
+.cp_site_list{
+	list-style:disc url("../images/IDE/icons/folder.png") inside;
+	margin-top:15px;
+	padding-left:5px;
+	cursor:default;
+}
+.cp_site_list li{
+	padding:3px;
+	padding-left:10px;
+	border-radius:2px;
+}
+.cp_site_list li:hover{background-color:rgba(0,0,0,.2);}
+.cp_site_list li .right_links{display:none;}
+.cp_site_list li:hover .right_links{display:block;}
+.create_btn{
+	position:absolute;
+	bottom:15px;
+	right:15px;
+}
+
+.confirm_delete{
+	text-align:center;
+	padding:20px;
+}
+
+/* Create site styles */
+.create_methods{
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	font-size:18px;
+	overflow:auto;
+}
+.create_methods li{
+	padding:5px;
+	padding-right:15px;
+	margin:5px;
+	background-color:rgba(0,0,0,.3);
+	border-radius:8px;
+	border:1px dashed transparent;
+	cursor:pointer;
+	float:left;
+}
+.create_methods li:hover{
+	background-color:rgba(0,0,0,.6);
+	border-color:#655138;
+}
+.create_methods li > img{
+	margin-right:12px;
+	height:35px;
+}
+.pwd_protection{
+	margin-left:40px;
+	display:none;
+}
+
+/* POPUP MESSAGE BOX */
+#popupbox_opacity{
+	background-color:#16000d;
+	opacity:0;
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:998;
+	display:none;
+}
+#popupbox_cont{
+	padding:4px;
+	border:5px solid #3d0f2a;
+	background-color:#c88db0;
+	border-radius:0px 10px;
+	position:fixed;
+	z-index:999;
+	display:none;
+	margin-top:-9px;
+	opacity:0;
+}
+#popupbox_cont > div{
+	border-radius:0px 5px;
+	background:#3f142c;
+	position: relative;
+	height:100%;
+}
+.mess_contents{
+	overflow:auto;
+	font-size:15px;
+	color:black;
+	color:#ad824b;
+	text-align:center;
+}
+#mess_x{
+	background:url('../images/x.png') no-repeat;
+	height:21px;
+	width:21px;
+	cursor:pointer;
+	position:absolute;
+	top:-9px;
+	left:-9px;
+}
+#mess_x:hover{background:url('../images/x_roll.png') no-repeat;}

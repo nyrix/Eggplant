@@ -1,0 +1,67 @@
+<?php echo $this->doctype() . "\n" ?>
+
+<!--
+	Copyright Nyrix, LLC
+	http://www.nyrixcorp.com
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<?php echo $this->headMeta() . "\n" ?>
+<?php echo $this->headTitle() . "\n" ?>
+<?php echo $this->headLink() . "\n" ?>
+<?php echo $this->headScript() . "\n" ?>
+
+</head>
+<body>
+<div class="logo_bar"></div>
+<div class="title_bar">
+	<a href="<?php echo $this->url(array('controller'=>'index','action'=>'index')) ?>"><h1>Eggplant IDE&#8482;</h1></a>
+	<span id="version_num">v1.5a</span>
+	<div class="title_bar_shadow"></div>
+</div>
+<div class="content_bar">
+	<div class="side_navi">
+		<a href="<?php echo $this->url(array('controller'=>'index','action'=>'login')) ?>">
+			<div class="navi_profile">
+				<img src="/images/icons/profile_color.png" />
+				<div class="sliding_navi">Login</div>
+			</div>
+		</a>
+		<a href="<?php echo $this->url(array('controller'=>'news','action'=>'index')) ?>">
+			<div class="navi_news">
+				<img src="/images/icons/news_color.png" />
+				<div class="sliding_navi">News</div>
+			</div>
+		</a>
+		<a href="<?php echo $this->url(array('controller'=>'community','action'=>'index')) ?>">
+			<div class="navi_community">
+				<img src="/images/icons/community_color.png" />
+				<div class="sliding_navi">Community</div>
+			</div>
+		</a>
+		<a href="<?php echo $this->url(array('controller'=>'help','action'=>'index')) ?>">
+			<div class="navi_help">
+				<img src="/images/icons/help_color.png" />
+				<div class="sliding_navi">Help</div>
+			</div>
+		</a>
+	</div>
+	<div class="bottom_grad"></div>
+	<div class="content">
+<!-- Page content starts here -->
+
+<?php echo $this->layout()->content . "\n" ?>
+
+<!-- Page content ends here -->
+	</div>
+</div>
+<div class="footer">
+	<a href="<?php echo $this->url(array('controller'=>'index','action'=>'bug')) ?>">Report a Bug</a> <span class="seperator">|</span>
+	<a href="<?php echo $this->url(array('controller'=>'index','action'=>'about')) ?>">About</a> <span class="seperator">|</span>
+	<a href="<?php echo $this->url(array('controller'=>'index','action'=>'privacy')) ?>">Privacy Policy</a> <span class="seperator">|</span>
+	<a href="<?php echo $this->url(array('controller'=>'index','action'=>'terms')) ?>">Terms of Use</a> <span class="seperator">|</span>
+	<a href="http://www.nyrixcorp.com" target="_blank">&#169; Nyrix, LLC&#8482;</a>
+</div>
+</body>
+</html>
