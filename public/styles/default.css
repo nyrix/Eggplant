@@ -146,3 +146,50 @@ div.navi_help{background:url(/images/icons/help.png) no-repeat;}
 	text-align: center;
 	z-index: 3;
 }
+
+/* POPUP MESSAGE BOX */
+#popupbox_opacity {
+	background-color: #16000d;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 998;
+	display: none;
+}
+#popupbox_cont {
+	padding: 4px;
+	border: 5px solid #3d0f2a;
+	background-color: #c88db0;
+	border-radius: 0px 10px;
+	position: fixed;
+	z-index: 999;
+	display: none;
+	margin-top: -9px;
+	opacity: 0;
+}
+#popupbox_cont > div {
+	border-radius: 0px 5px;
+	background: #3f142c;
+	position: relative;
+	height: 100%;
+}
+.mess_contents {
+	overflow: auto;
+	font-size: 15px;
+	color: black;
+	color: #ad824b;
+	text-align: center;
+}
+#mess_x {
+	background: url(/images/x.png) no-repeat;
+	height: 21px;
+	width: 21px;
+	cursor: pointer;
+	position: absolute;
+	top: -9px;
+	left: -9px;
+}
+#mess_x:hover {background:url(/images/x_roll.png) no-repeat;}
